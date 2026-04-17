@@ -107,7 +107,7 @@ for i in range(len(piBondsCount) - 1):
         formulaCount.append(1)
         formulae.append(2 * numCarbons + 2 - 2 * piBondsCount[i + 1] - 1)
 
-print(f"The total number of permutations for {numCarbons} carbon atoms is {len(permutations)}.")
+print(f"The total number of configurations for {numCarbons} carbon atoms is {len(permutations)}.")
 for i in range(len(formulaCount)):
     if formulae[i] != 1:
         print(f"There is/are {formulaCount[i]} isomer(s) of formula C{numCarbons}H{formulae[i]}F.")
